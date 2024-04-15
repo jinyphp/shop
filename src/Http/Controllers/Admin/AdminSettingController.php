@@ -1,5 +1,5 @@
 <?php
-namespace Jiny\Shop\Http\Controllers;
+namespace Jiny\Shop\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
