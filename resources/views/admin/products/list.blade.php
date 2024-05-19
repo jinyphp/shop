@@ -1,0 +1,69 @@
+<div>
+    @if(Session::has('message'))
+        <div class="alert alert-success">{{Session::get('message')}}</div>
+    @endif
+
+    <x-datatable>
+        <thead>
+            <tr>
+                <th width='20'>
+                    <input type='checkbox' class="form-check-input" wire:model="selectedall">
+                </th>
+                <th width='100'>Id</th>
+                <th width='100'>이미지</th>
+                <th width='300'>제품명</th>
+                <th>Slug</th>
+                <th width='100'>설명</th>
+                <th width='100'>sale</th>
+                <th width='100'>stock</th>
+                <th width='100'>price</th>
+                <th width='200'>category</th>
+            </tr>
+        </thead>
+        <tbody>
+        @if(!empty($rows))
+            @foreach ($rows as $item)
+
+            {{-- row-selected --}}
+            @if(in_array($item->id, $selected))
+            <tr class="row-selected">
+            @else
+            <tr>
+            @endif
+
+                <td width='20'>
+                    <input type='checkbox' name='ids' value="{{$item->id}}"
+                    class="form-check-input"
+                    wire:model="selected">
+                </td>
+
+                <td width='100'>{{$item->id}}</td>
+                <td width='100'>
+                    <a href="/shop/detail/{{$item->slug}}" target="_blank">
+                    <img src="{{asset('assets/shop/templates/images/products')}}/{{$item->image}}" width="100px"/>
+                    </a>
+                </td>
+                <td width='300'>
+                    <div>
+                        {!! $popupEdit($item, $item->name) !!}
+                    </div>
+                    <div>
+                        {{$item->sort_description}}
+                    </div>
+                </td>
+                <td>
+                    {{$item->slug}}
+                </td>
+                <td width='100'>설명</td>
+                <td width='100'>{{$item->sale_price}}</td>
+                <td width='100'>{{$item->stock_status}}</td>
+                <td width='100'>{{$item->regular_price}}</td>
+                <td width='200'>{{$item->category_id}}</td>
+            </tr>
+            @endforeach
+        @else
+            사업자 목록이 없습니다.
+        @endif
+        </tbody>
+    </x-datatable>
+</div>

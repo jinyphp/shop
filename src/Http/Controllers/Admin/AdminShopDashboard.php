@@ -20,7 +20,7 @@ class AdminShopDashboard extends DashboardController
         parent::__construct();
         $this->setVisit($this);
 
-        $this->actions['view']['layout'] = "jiny-shop::admin.dashboard.dash";
+        $this->actions['view']['layout'] = "jiny-jiny-shop::admin.dashboard.dash";
 
         $this->actions['title'] = "Shop Dashboard";
         $this->actions['subtitle'] = "쇼핑몰을 관리합니다.";
