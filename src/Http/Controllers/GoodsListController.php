@@ -26,7 +26,7 @@ class GoodsListController extends Controller
 
         // $cart_idx = $this->checkCartIdx($request);
 
-        $viewFile = 'jiny-jiny-shop::goods.layout';
+        $viewFile = 'jiny-shop::goods.layout';
         return view($viewFile,[
             'admin'=>$this->admin
         ]);
@@ -57,7 +57,7 @@ class GoodsListController extends Controller
         if($cate && $cate['layout']) {
             $viewFile = $cate['layout'];
         } else {
-            $viewFile = 'jiny-jiny-shop::products.main';
+            $viewFile = 'jiny-shop::products.main';
         }
 
         // 화면 출력

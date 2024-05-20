@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('shop_shipping_method', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
+            $table->integer('ref')->default(0);
+            $table->integer('level')->default(0);
+            $table->integer('pos')->default(1);
+
             $table->string('enable')->default(1);
             $table->string('name')->nullable();
             $table->string('price')->nullable();
@@ -29,7 +34,7 @@ return new class extends Migration
             $table->string('cost')->nullable();
             $table->string('country')->nullable();
 
-            $table->timestamps();
+
         });
     }
 

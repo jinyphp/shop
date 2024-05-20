@@ -71,7 +71,7 @@
     @endif
 
 
-    <x-popup-dialog maxWidth="4xl" wire:model="popupConfirmDelete">
+    <x-wire-dialog-modal maxWidth="4xl" wire:model="popupConfirmDelete">
         <x-slot name="title">
             {{ __('장바구니 삭제') }}
         </x-slot>
@@ -85,7 +85,7 @@
 
             <x-btn-primary wire:click="popupClose">닫기</x-btn-primary>
         </x-slot>
-    </x-popup-dialog>
+    </x-wire-dialog-modal>
 
 
 

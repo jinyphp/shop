@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('shop_reviews', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
+            $table->integer('ref')->default(0);
+            $table->integer('level')->default(0);
+            $table->integer('pos')->default(1);
+
             $table->string('enable')->default(1);
 
             $table->unsignedBigInteger('product_id');
@@ -33,12 +38,9 @@ return new class extends Migration
             // shop_reviews_like 에 기록
             $table->integer('like')->default(0);
 
-            //계층관리
-            $table->integer('ref')->default(0);
-            $table->integer('level')->default(0);
-            $table->integer('pos')->default(0);
 
-            $table->timestamps();
+
+
         });
     }
 

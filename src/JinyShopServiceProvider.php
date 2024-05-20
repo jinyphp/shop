@@ -21,7 +21,6 @@ class JinyShopServiceProvider extends ServiceProvider
 
 
         // 컴포넌트
-        Blade::component(\Jiny\Shop\View\Components\ShopDropzone::class, "shop-dropzone"); // 새로운 상품을 등록합니다.
         Blade::component(\Jiny\Shop\View\Components\ShopProductImage::class, "shop-product-image"); // 제품의 이미지를 추가 등록합니다.
         Blade::component(\Jiny\Shop\View\Components\Banner::class, "jiny-banner");
         Blade::component(\Jiny\Shop\View\Components\FilterBrand::class, "shop-filter-brand");
@@ -36,8 +35,7 @@ class JinyShopServiceProvider extends ServiceProvider
     {
         /* 라이브와이어 컴포넌트 등록 */
         $this->app->afterResolving(BladeCompiler::class, function () {
-            Livewire::component('ShopProductList',
-                \Jiny\Shop\Http\Livewire\ShopProductList::class);
+
 
                 Livewire::component('LiveProducts', \Jiny\Shop\Http\Livewire\LiveProducts::class);
 
@@ -55,12 +53,10 @@ class JinyShopServiceProvider extends ServiceProvider
 
                 // 상세정보
                 Livewire::component('LiveDetail', \Jiny\Shop\Http\Livewire\LiveDetail::class);
-                Livewire::component('ShopProductDetail', \Jiny\Shop\Http\Livewire\ShopProductDetail::class);
-                Livewire::component('ShopProductImage', \Jiny\Shop\Http\Livewire\ShopProductImage::class);
-                Livewire::component('ShopProductDescription', \Jiny\Shop\Http\Livewire\ShopProductDescription::class);
-                Livewire::component('ShopProductInfomation', \Jiny\Shop\Http\Livewire\ShopProductInfomation::class);
 
-                Livewire::component('ShopRelatedProducts', \Jiny\Shop\Http\Livewire\ShopRelatedProducts::class);
+
+
+
                 Livewire::component('ShopPopularProducts', \Jiny\Shop\Http\Livewire\ShopPopularProducts::class);
                 Livewire::component('ShopProductReviews', \Jiny\Shop\Http\Livewire\ShopProductReviews::class);
                 Livewire::component('ShopMostViewProducts', \Jiny\Shop\Http\Livewire\ShopMostViewProducts::class);
@@ -70,7 +66,6 @@ class JinyShopServiceProvider extends ServiceProvider
 
                 // 카테고리
 
-                Livewire::component('ShopProductBreadcrumb', \Jiny\Shop\Http\Livewire\ShopProductBreadcrumb::class);
 
                 Livewire::component('LiveSearch', \Jiny\Shop\Http\Livewire\LiveSearch::class);
                 Livewire::component('LiveSearchProduct', \Jiny\Shop\Http\Livewire\LiveSearchProduct::class);
@@ -80,7 +75,7 @@ class JinyShopServiceProvider extends ServiceProvider
                 Livewire::component('LiveOnSale', \Jiny\Shop\Http\Livewire\LiveOnSale::class);
                 Livewire::component('LiveLastProduct', \Jiny\Shop\Http\Livewire\LiveLastProduct::class);
 
-                Livewire::component('ShopBrands', \Jiny\Shop\Http\Livewire\ShopBrands::class);
+
 
                 Livewire::component('LiveWishListCount', \Jiny\Shop\Http\Livewire\LiveWishListCount::class);
                 Livewire::component('LiveCartListCount', \Jiny\Shop\Http\Livewire\LiveCartListCount::class);
@@ -94,6 +89,8 @@ class JinyShopServiceProvider extends ServiceProvider
                 // 사용자정보
                 Livewire::component('LivePasswordChange', \Jiny\Shop\Http\Livewire\LivePasswordChange::class);
                 Livewire::component('UserProfile', \Jiny\Shop\Http\Livewire\UserProfile::class);
+
+
 
 
         });

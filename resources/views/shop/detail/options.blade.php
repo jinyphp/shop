@@ -5,7 +5,7 @@
     <span wire:click="openOptionSetting({{$product['id']}})">옵션설정</span>
 
     @if($admin)
-    <x-popup-dialog maxWidth="7xl" wire:model="popupOptionSetting">
+    <x-wire-dialog-modal maxWidth="7xl" wire:model="popupOptionSetting">
         <x-slot name="title">
             {{ __('옵션설정') }}
         </x-slot>
@@ -55,6 +55,6 @@
         <x-slot name="footer">
             <x-btn-second wire:click="closeOptionSetting">닫기</x-btn-second>
         </x-slot>
-    </x-popup-dialog>
+    </x-wire-dialog-modal>
     @endif
 </div>

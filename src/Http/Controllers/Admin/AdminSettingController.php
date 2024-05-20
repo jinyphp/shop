@@ -20,7 +20,7 @@ class AdminSettingController extends ConfigController
 
         ##
         $this->actions['filename'] = "jiny/shop/setting"; // 설정파일명(경로)
-        $this->actions['view']['form'] = "jiny-jiny-shop::admin.setting.form";
+        $this->actions['view']['form'] = "jiny-shop::admin.setting.form";
 
         $this->actions['title'] = "쇼핑설정";
     }

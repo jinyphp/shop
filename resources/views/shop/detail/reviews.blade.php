@@ -20,7 +20,7 @@
 
         {{-- 팝업 리뷰 작성창 --}}
         <!-- Divider: Heading With Action -->
-        <x-popup-dialog maxWidth="7xl" wire:model="popup">
+        <x-wire-dialog-modal maxWidth="7xl" wire:model="popup">
             <x-slot name="title">
                 {{ __('리뷰작성') }}
             </x-slot>
@@ -34,7 +34,7 @@
                 <x-btn-primary wire:click="save">작성</x-btn-primary>
                 --}}
             </x-slot>
-        </x-popup-dialog>
+        </x-wire-dialog-modal>
 
         <h3 class="flex items-center my-8">
             <span class="text-lg font-medium mr-3">리뷰 상품평</span>

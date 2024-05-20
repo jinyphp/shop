@@ -197,7 +197,7 @@
 
     @if($admin)
     <!-- admin Popup -->
-    <x-popup-dialog maxWidth="4xl" wire:model="popup">
+    <x-wire-dialog-modal maxWidth="4xl" wire:model="popup">
         <x-slot name="title">
             {{ __('상품정보') }}
         </x-slot>
@@ -267,11 +267,11 @@
 
             <x-btn-primary wire:click="update">저장</x-btn-primary>
         </x-slot>
-    </x-popup-dialog>
+    </x-wire-dialog-modal>
     @endif
 
     <!-- 장바구니 팝업 -->
-    <x-popup-dialog maxWidth="4xl" wire:model="popupCart">
+    <x-wire-dialog-modal maxWidth="4xl" wire:model="popupCart">
         <x-slot name="title">
             {{ __('장바구니 추가') }}
         </x-slot>
@@ -282,6 +282,6 @@
 
             <x-btn-primary wire:click="popupCartClose">닫기</x-btn-primary>
         </x-slot>
-    </x-popup-dialog>
+    </x-wire-dialog-modal>
 
 </div>

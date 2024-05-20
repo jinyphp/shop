@@ -75,7 +75,7 @@
 
     <!-- 이미지 수정 Popup-->
     @if($admin)
-    <x-popup-dialog maxWidth="7xl" wire:model="popup">
+    <x-wire-dialog-modal maxWidth="7xl" wire:model="popup">
         <x-slot name="title">
             {{ $product['id'] }}
             {{ __('제품 이미지 편집') }}
@@ -152,6 +152,6 @@
 
             <x-btn-primary wire:click="update">저장</x-btn-primary>
         </x-slot>
-    </x-popup-dialog>
+    </x-wire-dialog-modal>
     @endif
 </div>

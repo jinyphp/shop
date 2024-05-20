@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('shop_banners', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
+            $table->integer('ref')->default(0);
+            $table->integer('level')->default(0);
+            $table->integer('pos')->default(1);
+
             $table->string('enable')->default(1);
             $table->string('code');
             $table->string('link')->nullable();
@@ -32,7 +37,7 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('template')->default('basic');
 
-            $table->timestamps();
+
         });
     }
 

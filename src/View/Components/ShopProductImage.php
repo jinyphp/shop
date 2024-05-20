@@ -30,6 +30,6 @@ class ShopProductImage extends Component
      */
     public function render()
     {
-        return view('jiny-jiny-shop::components.'.'shop_product_image');
+        return view('jiny-shop::components.'.'shop_product_image');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateShopSlidersTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -15,6 +15,10 @@ class CreateShopSlidersTable extends Migration
     {
         Schema::create('shop_sliders', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
+            $table->integer('ref')->default(0);
+            $table->integer('level')->default(0);
+            $table->integer('pos')->default(1);
 
             $table->string('title')->nullable();
             $table->string('subtitle')->nullable();
@@ -23,7 +27,7 @@ class CreateShopSlidersTable extends Migration
             $table->string('image');
             $table->boolean('status')->default(false);
 
-            $table->timestamps();
+
         });
     }
 
@@ -36,4 +40,4 @@ class CreateShopSlidersTable extends Migration
     {
         Schema::dropIfExists('shop_sliders');
     }
-}
+};
