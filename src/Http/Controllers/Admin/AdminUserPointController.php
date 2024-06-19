@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-use Jiny\Table\Http\Controllers\ResourceController;
-class AdminUserPointController extends ResourceController
+use Jiny\WireTable\Http\Controllers\WireTablePopupForms;
+class AdminUserPointController extends WireTablePopupForms
 {
     public function __construct()
     {

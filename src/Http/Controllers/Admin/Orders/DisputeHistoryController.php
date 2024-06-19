@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-use Jiny\Table\Http\Controllers\AdminController;
-class DisputeHistoryController extends AdminController
+use Jiny\WireTable\Http\Controllers\WireTablePopupForms;
+class DisputeHistoryController extends WireTablePopupForms
 {
     public function __construct()
     {
