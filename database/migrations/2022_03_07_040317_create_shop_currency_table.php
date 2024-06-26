@@ -4,6 +4,18 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * <쇼핑몰 화폐>
+ * enable: 사용가능한지?
+ * checked: 체크여부?
+ * title: 화폐 이름
+ * currency: 통화 기호1
+ * align: 정렬 방법
+ * mark: 통화 기호2
+ * rate: 환율 정보
+ * dec_point: 유효소수점
+ * description: 설명
+ */
 return new class extends Migration
 {
     /**

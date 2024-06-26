@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
+/**
+ * 뭔지모르겠어요....
+ * rstatus:
+ */
 return new class extends Migration
 {
     /**

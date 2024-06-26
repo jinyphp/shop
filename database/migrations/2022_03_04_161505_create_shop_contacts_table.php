@@ -4,6 +4,13 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * <쇼핑몰 이메일 및 전화 연결 방법>
+ * name: 쇼핑몰 이름
+ * email: 쇼핑몰 이메일
+ * phone: 쇼핑몰 전화번호
+ * comment: 연결 시 코멘트
+ */
 return new class extends Migration
 {
     /**

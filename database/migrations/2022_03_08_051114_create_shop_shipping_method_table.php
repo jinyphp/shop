@@ -4,6 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * <배송 정보>
+ * enable: 노출 여부
+ * name: 상품 이름
+ * price: 배송비
+ * priod:
+ * manager_name: 관리자 이름
+ * manager_phone: 관리자 전화번호
+ * depature: 출발지
+ * arrive: 도착지
+ * cost: 거리?
+ * country: 국가
+ */
 return new class extends Migration
 {
     /**
