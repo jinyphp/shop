@@ -4,6 +4,20 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * <쇼핑몰 리뷰>
+ * enable: 노출여부
+ * product_id: 상품id
+ * product: 상품이름
+ * title: 리뷰 제목
+ * review: 리뷰 내용
+ * rank: 평점
+ * user_id: 유저id
+ * username: 유저이름
+ * email: 유저이메일
+ * password: 유저비밀번호
+ * like: 좋아요
+ */
 return new class extends Migration
 {
     /**

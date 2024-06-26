@@ -4,6 +4,16 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * <이벤트 정보>
+ * enable: 노출 여부
+ * product_id: 상품 id
+ * product: 상품 이름
+ * type: 할인 타입
+ * discount: 할인가
+ * max_count: 최대 판매수량
+ * expire: 만료일자
+ */
 return new class extends Migration
 {
     /**

@@ -4,6 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * <쇼핑몰 배너 로고?>
+ * enable: 사용가능한지?
+ * code: 배너코드?
+ * link:
+ * start:
+ * end:
+ * image: 배너 이미지
+ * width: 배너 넓이
+ * height: 배너 높이
+ * description: 배너 설명
+ * template: 배너 템플릿
+ */
 return new class extends Migration
 {
     /**

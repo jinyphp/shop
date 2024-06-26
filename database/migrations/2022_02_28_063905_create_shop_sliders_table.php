@@ -4,6 +4,15 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * <쇼핑몰 슬라이더(?)>
+ * title:제목
+ * subtitle: 부제목
+ * price: 쇼핑몰 가격
+ * link: 쇼핑몰 링크
+ * image: 쇼핑몰 로고
+ * status: 상태?
+ */
 return new class extends Migration
 {
     /**
