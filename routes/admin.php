@@ -22,5 +22,15 @@ if(function_exists('admin_prefix')) {
             \Jiny\Shop\Http\Controllers\Admin\AdminShopDashboard::class,
             "index"]);
 
+
     });
 }
+
+## 인증 없이 접속가능한 경로 처리
+Route::middleware(['web'])->group(function(){
+    Route::get('/admin/shop/banners', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminBannersController::class,
+        "index"]);
+});
+
+
