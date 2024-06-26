@@ -32,9 +32,12 @@ Route::middleware(['web'])
  * 관리자 링크
  */
 Route::middleware(['auth:sanctum','verified'])->group(function(){
+
+    /*
     Route::get('/shop/admin', [
         \Jiny\Shop\Http\Controllers\Admin\AdminDashboardController::class,
         "index"]);
+        */
 
     //Route::resource('/shop/admin/category', \Jiny\Shop\Http\Controllers\Admin\AdminCategoryController::class);
 
@@ -84,27 +87,4 @@ Route::prefix('godo')->group(function() {
 });
 
 
-
-
-/**
- * Admin Site Router
- */
-if(function_exists('admin_prefix')) {
-    $prefix = admin_prefix();
-
-    Route::middleware(['web','auth', 'admin'])
-    ->name('admin.shop')
-    ->prefix($prefix.'/shop')->group(function () {
-
-        ## 설정
-        Route::get('setting', [
-            \Jiny\Shop\Http\Controllers\Admin\AdminSettingController::class,"index"]);
-
-
-        // 사이트 데쉬보드
-        Route::get('/', [
-            \Jiny\Shop\Http\Controllers\Admin\AdminShopDashboard::class,
-            "index"]);
-
-    });
-}
+include(__DIR__.DIRECTORY_SEPARATOR."admin.php");
