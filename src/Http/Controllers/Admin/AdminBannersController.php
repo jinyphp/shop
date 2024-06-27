@@ -22,11 +22,8 @@ class AdminBannersController extends WireTablePopupForms
         ##
         $this->actions['table'] = "shop_banners"; // 테이블 정보
 
-        $this->actions['view_list'] = "jiny-shop::admin.banners.list";
-        $this->actions['view_form'] = "jiny-shop::admin.banners.form";
+        $this->actions['view']['list'] = "jiny-shop::admin.banners.list";
+        $this->actions['view']['form'] = "jiny-shop::admin.banners.form";
 
     }
-
-
-
 }
