@@ -27,9 +27,19 @@ if(function_exists('admin_prefix')) {
     });
 }
 
-## 인증 없이 접속가능한 경로 처리
+##
 Route::middleware(['web'])->group(function(){
     Route::get('/admin/shop/banners', [
         \Jiny\Shop\Http\Controllers\Admin\AdminBannersController::class,
         "index"]);
+
+    Route::get('/admin/shop/sliders', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminSlidersController::class,
+        "index"]);
+
+    Route::get('/admin/shop/contact', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminContactController::class,
+        "index"]);
 });
+
+

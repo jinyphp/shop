@@ -3,13 +3,9 @@
     <x-wire-thead>
         <th width='100'>Id</th>
         <th width='100'>이미지</th>
-        <th width='100'>제목</th>
-        <th width='100'>Subtitle</th>
-        <th width='100'>price</th>
-        <th width='100'>link</th>
-        <th width='100'>status</th>
-        <th width='100'>date</th>
-        <th width='100'>action</th>
+        <th width='100'>코드</th>
+        <th width='100'>이동링크</th>
+        <th width='100'>기간</th>
     </x-wire-thead>
     <tbody>
         @if(!empty($rows))
@@ -21,15 +17,18 @@
                         {{$item->id}}
                     </x-click>
                 </td>
+
                 <td width='100'>{{$item->image}}</td>
-                <td width='100'>{{$item->title}}</td>
-                <td width='100'>{{$item->subtitle}}</td>
-                <td width='100'>{{$item->price}}</td>
+                <td width='100'>{{$item->code}}</td>
                 <td width='100'>{{$item->link}}</td>
-                <td width='100'>{{$item->status}}</td>
-                <td width='100'>{{$item->created_at}}</td>
+                <td width='200'>{{$item->start}} ~ {{$item->end}}</td>
             </x-wire-tbody-item>
             @endforeach
         @endif
     </tbody>
 </x-wire-table>
+
+
+
+
+

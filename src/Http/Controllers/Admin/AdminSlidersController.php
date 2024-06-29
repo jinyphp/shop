@@ -22,8 +22,8 @@ class AdminSlidersController extends WireTablePopupForms
         ##
         $this->actions['table'] = "shop_sliders"; // 테이블 정보
 
-        $this->actions['view_list'] = "jiny-shop::admin.sliders.list";
-        $this->actions['view_form'] = "jiny-shop::admin.sliders.form";
+        $this->actions['view']['list'] = "jiny-shop::admin.sliders.list";
+        $this->actions['view']['form'] = "jiny-shop::admin.sliders.form";
 
     }
 
