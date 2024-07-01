@@ -40,6 +40,10 @@ Route::middleware(['web'])->group(function(){
     Route::get('/admin/shop/contact', [
         \Jiny\Shop\Http\Controllers\Admin\AdminContactController::class,
         "index"]);
+
+    Route::get('/admin/shop/currency', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminCurrencyController::class,
+        "index"]);
 });
 
 
