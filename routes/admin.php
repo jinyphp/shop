@@ -48,6 +48,14 @@ Route::middleware(['web'])->group(function(){
     Route::get('/admin/shop/review', [
         \Jiny\Shop\Http\Controllers\Admin\AdminReviewController::class,
         "index"]);
+
+    Route::get('/admin/shop/shipping', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminShippingMethodController::class,
+        "index"]);
+
+    Route::get('/admin/shop/seller', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminSellerController::class,
+        "index"]);
 });
 
 
