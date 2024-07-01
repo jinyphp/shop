@@ -60,6 +60,10 @@ Route::middleware(['web'])->group(function(){
     Route::get('/admin/shop/event_price', [
         \Jiny\Shop\Http\Controllers\Admin\AdminEventPriceController::class,
         "index"]);
+
+    Route::get('/admin/shop/roles', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminRoleController::class,
+        "index"]);
 });
 
 
