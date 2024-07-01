@@ -44,6 +44,10 @@ Route::middleware(['web'])->group(function(){
     Route::get('/admin/shop/currency', [
         \Jiny\Shop\Http\Controllers\Admin\AdminCurrencyController::class,
         "index"]);
+
+    Route::get('/admin/shop/review', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminReviewController::class,
+        "index"]);
 });
 
 
