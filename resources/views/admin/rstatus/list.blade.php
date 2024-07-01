@@ -2,10 +2,7 @@
     {{-- 테이블 제목 --}}
     <x-wire-thead>
         <th width='100'>Id</th>
-        <th width='100'>이미지</th>
-        <th width='100'>코드</th>
-        <th width='100'>이동링크</th>
-        <th width='100'>기간</th>
+        <th width='100'>rstatus</th>
     </x-wire-thead>
     <tbody>
         @if(!empty($rows))
@@ -18,10 +15,7 @@
                     </x-click>
                 </td>
 
-                <td width='100'>{{$item->image}}</td>
-                <td width='100'>{{$item->code}}</td>
-                <td width='100'>{{$item->link}}</td>
-                <td width='200'>{{$item->start}} ~ {{$item->end}}</td>
+                <td width='100'>{{$item->rstatus}}</td>
             </x-wire-tbody-item>
             @endforeach
         @endif

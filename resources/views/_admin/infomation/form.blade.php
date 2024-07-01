@@ -7,7 +7,7 @@
             <x-navtab-link class="rounded-0 active">
                 <span class="d-none d-md-block">기본정보</span>
             </x-navtab-link>
-
+            {{--
             <x-form-hor>
                 <x-form-label>활성화</x-form-label>
                 <x-form-item>
@@ -16,76 +16,51 @@
                     !!}
                 </x-form-item>
             </x-form-hor>
+            --}}
+
 
             <x-form-hor>
-                <x-form-label>title</x-form-label>
+                <x-form-label>이름</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.title")
+                        ->setWire('model.defer',"forms.name")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>currency</x-form-label>
+                <x-form-label>email</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.currency")
+                        ->setWire('model.defer',"forms.email")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>align</x-form-label>
+                <x-form-label>phone</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.align")
+                        ->setWire('model.defer',"forms.phone")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
+
+
             <x-form-hor>
-                <x-form-label>mark</x-form-label>
+                <x-form-label>comment</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.mark")
+                        ->setWire('model.defer',"forms.comment")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
-            <x-form-hor>
-                <x-form-label>rate</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.rate")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>dec_point</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.dec_point")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>description</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.description")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
 
         </x-navtab-item>
 

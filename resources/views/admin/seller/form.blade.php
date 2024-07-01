@@ -8,7 +8,6 @@
                 <span class="d-none d-md-block">기본정보</span>
             </x-navtab-link>
 
-
             <x-form-hor>
                 <x-form-label>활성화</x-form-label>
                 <x-form-item>
@@ -19,7 +18,7 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>판매자명</x-form-label>
+                <x-form-label>seller</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.seller")
@@ -28,9 +27,8 @@
                 </x-form-item>
             </x-form-hor>
 
-
             <x-form-hor>
-                <x-form-label>이메일</x-form-label>
+                <x-form-label>email</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.email")
@@ -39,10 +37,18 @@
                 </x-form-item>
             </x-form-hor>
 
-
+            <x-form-hor>
+                <x-form-label>password</x-form-label>
+                <x-form-item>
+                    {!! xInputText()
+                        ->setWire('model.defer',"forms.password")
+                        ->setWidth("standard")
+                    !!}
+                </x-form-item>
+            </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>사이트</x-form-label>
+                <x-form-label>site</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.site")
@@ -52,7 +58,7 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>타이틀</x-form-label>
+                <x-form-label>title</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.title")
@@ -62,7 +68,7 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>연락처</x-form-label>
+                <x-form-label>phone</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.phone")
@@ -72,7 +78,27 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>담당자</x-form-label>
+                <x-form-label>post</x-form-label>
+                <x-form-item>
+                    {!! xInputText()
+                        ->setWire('model.defer',"forms.post")
+                        ->setWidth("standard")
+                    !!}
+                </x-form-item>
+            </x-form-hor>
+
+            <x-form-hor>
+                <x-form-label>address</x-form-label>
+                <x-form-item>
+                    {!! xInputText()
+                        ->setWire('model.defer',"forms.address")
+                        ->setWidth("standard")
+                    !!}
+                </x-form-item>
+            </x-form-hor>
+
+            <x-form-hor>
+                <x-form-label>manager</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.manager")
@@ -81,8 +107,15 @@
                 </x-form-item>
             </x-form-hor>
 
-
-
+            <x-form-hor>
+                <x-form-label>comment</x-form-label>
+                <x-form-item>
+                    {!! xInputText()
+                        ->setWire('model.defer',"forms.comment")
+                        ->setWidth("standard")
+                    !!}
+                </x-form-item>
+            </x-form-hor>
 
         </x-navtab-item>
 
