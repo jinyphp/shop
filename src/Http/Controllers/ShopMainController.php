@@ -1,5 +1,4 @@
 <?php
-
 namespace Jiny\Shop\Http\Controllers;
 
 use Illuminate\Contracts\Support\Renderable;
@@ -17,7 +16,23 @@ class ShopMainController extends Controller
      */
     public function index()
     {
-        return view('jiny-shop::shop.main.index');
+        $name = "나경주";
+        $rows = "디비를 검색한 결과";
+
+
+        //
+        //
+        //
+        //
+        //
+
+
+
+
+        //return view('jiny-shop::shop.main.index');
+        return view("www::slot1.shop.home",[
+            'name' => $name
+        ]);
     }
 
 }

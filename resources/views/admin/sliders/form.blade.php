@@ -7,7 +7,19 @@
             <x-navtab-link class="rounded-0 active">
                 <span class="d-none d-md-block">기본정보</span>
             </x-navtab-link>
-            {{--
+
+            {{-- <div class="mb-3">
+                <label for="simpleinput" class="form-label">이미지</label>
+                <input type="file" class="form-control"
+                            wire:model.defer="forms.image">
+                <p>
+                    @if(isset($forms['image']))
+                    {{$forms['image']}}
+                    @endif
+                </p>
+            </div> --}}
+
+
             <x-form-hor>
                 <x-form-label>활성화</x-form-label>
                 <x-form-item>
@@ -16,7 +28,8 @@
                     !!}
                 </x-form-item>
             </x-form-hor>
-            --}}
+
+
             <x-form-hor>
                 <x-form-label>이미지</x-form-label>
                 <x-form-item>

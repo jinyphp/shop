@@ -70,7 +70,10 @@ class JinyShopServiceProvider extends ServiceProvider
                 Livewire::component('LiveSearch', \Jiny\Shop\Http\Livewire\LiveSearch::class);
                 Livewire::component('LiveSearchProduct', \Jiny\Shop\Http\Livewire\LiveSearchProduct::class);
 
+                // 슬라이드 출력
                 Livewire::component('LiveSliders', \Jiny\Shop\Http\Livewire\LiveSliders::class);
+                Livewire::component('ShopMain-Selider', \Jiny\Shop\Http\Livewire\LiveSliders2::class);
+
                 Livewire::component('LiveMainCate', \Jiny\Shop\Http\Livewire\LiveMainCate::class);
                 Livewire::component('LiveOnSale', \Jiny\Shop\Http\Livewire\LiveOnSale::class);
                 Livewire::component('LiveLastProduct', \Jiny\Shop\Http\Livewire\LiveLastProduct::class);

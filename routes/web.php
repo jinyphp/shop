@@ -5,13 +5,26 @@ use Illuminate\Http\Request;
 $shop_prefix = "shop";
 
 Route::middleware(['web'])
-->name($shop_prefix)
-->prefix($shop_prefix)->group(function () {
+->name("shop")
+->prefix("shop")->group(function () {
+
+    // 홈화면:테스트
+    // Route::get('/home', function () {
+    //     return view("www::slot1.shop.home");
+    // });
+
+    Route::get('/home', [
+        \Jiny\Shop\Http\Controllers\ShopMainController::class,
+        "index"]);
+
+
 
     // 메인페이지
     Route::get('/', [
         \Jiny\Shop\Http\Controllers\ShopMainController::class,
         "index"]);
+
+
 
     // 이벤트
     Route::get('/event/{name?}', [
@@ -25,6 +38,14 @@ Route::middleware(['web'])
 });
 
 
+Route::middleware(['web'])
+->name("admin")
+->prefix("admin")->group(function () {
+    Route::get('/shop/sliders',[
+        \Jiny\Shop\Http\Controllers\Admin\AdminSlidersController::class,
+        "index"
+    ]);
+});
 
 
 
@@ -49,8 +70,7 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::resource('/shop/admin/event/price',
         \Jiny\Shop\Http\Controllers\Admin\AdminEventPriceController::class);
 
-    Route::resource('/shop/admin/sliders',
-        \Jiny\Shop\Http\Controllers\Admin\AdminSlidersController::class);
+
 
     Route::resource('/shop/admin/homecate',
         \Jiny\Shop\Http\Controllers\Admin\AdminHomeCateController::class);
