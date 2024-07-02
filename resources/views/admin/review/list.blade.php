@@ -2,13 +2,14 @@
     {{-- 테이블 제목 --}}
     <x-wire-thead>
         <th width='100'>Id</th>
+        <th width='100'>product_id</th>
+        <th width='100'>product</th>
         <th width='100'>title</th>
-        <th width='100'>currency</th>
-        <th width='100'>align</th>
-        <th width='100'>mark</th>
-        <th width='100'>rate</th>
-        <th width='100'>dec_point</th>
-        <th width='100'>description</th>
+        <th width='100'>review</th>
+        <th width='100'>rank</th>
+        <th width='100'>user_id</th>
+        <th width='100'>username</th>
+        <th width='100'>email</th>
     </x-wire-thead>
     <tbody>
         @if(!empty($rows))
@@ -20,22 +21,16 @@
                         {{$item->id}}
                     </x-click>
                 </td>
-
+                <td width='100'>{{$item->product_id}}</td>
+                <td width='100'>{{$item->product}}</td>
                 <td width='100'>{{$item->title}}</td>
-                <td width='100'>{{$item->currency}}</td>
-                <td width='100'>{{$item->align}}</td>
-                <td width='200'>{{$item->mark}}</td>
-                <td width='200'>{{$item->rate}}</td>
-                <td width='200'>{{$item->dec_point}}</td>
-                <td width='200'>{{$item->description}}</td>
+                <td width='200'>{{$item->review}}</td>
+                <td width='200'>{{$item->rank}}</td>
+                <td width='200'>{{$item->user_id}}</td>
+                <td width='200'>{{$item->username}}</td>
+                <td width='200'>{{$item->email}}</td>
             </x-wire-tbody-item>
             @endforeach
         @endif
     </tbody>
 </x-wire-table>
-
-
-
-
-
-

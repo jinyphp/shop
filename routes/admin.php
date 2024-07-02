@@ -26,3 +26,44 @@ if(function_exists('admin_prefix')) {
 
     });
 }
+
+##
+Route::middleware(['web'])->group(function(){
+    Route::get('/admin/shop/banners', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminBannersController::class,
+        "index"]);
+
+    Route::get('/admin/shop/sliders', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminSlidersController::class,
+        "index"]);
+
+    Route::get('/admin/shop/contact', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminContactController::class,
+        "index"]);
+
+    Route::get('/admin/shop/currency', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminCurrencyController::class,
+        "index"]);
+
+    Route::get('/admin/shop/review', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminReviewController::class,
+        "index"]);
+
+    Route::get('/admin/shop/shipping', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminShippingMethodController::class,
+        "index"]);
+
+    Route::get('/admin/shop/seller', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminSellerController::class,
+        "index"]);
+
+    Route::get('/admin/shop/event_price', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminEventPriceController::class,
+        "index"]);
+
+    Route::get('/admin/shop/roles', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminRoleController::class,
+        "index"]);
+});
+
+

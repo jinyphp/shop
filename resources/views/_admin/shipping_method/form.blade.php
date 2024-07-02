@@ -18,7 +18,7 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>name</x-form-label>
+                <x-form-label>배송명</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.name")
@@ -28,7 +28,7 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>price</x-form-label>
+                <x-form-label>배송비용</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.price")
@@ -38,17 +38,24 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>priod</x-form-label>
+                <x-form-label>배송기간</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.priod")
+                        ->setWire('model.defer',"forms.period")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
+        </x-navtab-item>
+
+
+        <x-navtab-item class="" >
+            <x-navtab-link class="rounded-0">
+                <span class="d-none d-md-block">업체정보</span>
+            </x-navtab-link>
 
             <x-form-hor>
-                <x-form-label>manager_name</x-form-label>
+                <x-form-label>담당자</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.manager_name")
@@ -58,7 +65,7 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>manager_phone</x-form-label>
+                <x-form-label>연락처</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.manager_phone")
@@ -67,47 +74,6 @@
                 </x-form-item>
             </x-form-hor>
 
-            <x-form-hor>
-                <x-form-label>depature</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.depature")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>arrive</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.arrive")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>cost</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.cost")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>country</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.country")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
         </x-navtab-item>
-
     </x-navtab>
 </div>

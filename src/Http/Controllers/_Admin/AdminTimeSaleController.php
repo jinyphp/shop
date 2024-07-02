@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
 use Jiny\WireTable\Http\Controllers\WireTablePopupForms;
-class AdminContactController extends WireTablePopupForms
+class AdminTimeSaleController extends WireTablePopupForms
 {
     public function __construct()
     {
@@ -20,10 +20,10 @@ class AdminContactController extends WireTablePopupForms
         $this->setVisit($this);
 
         ##
-        $this->actions['table'] = "shop_contacts"; // 테이블 정보
+        $this->actions['table'] = "shop_onsale"; // 테이블 정보
 
-        $this->actions['view']['list'] = "jiny-shop::admin.contact.list";
-        $this->actions['view']['form'] = "jiny-shop::admin.contact.form";
+        $this->actions['view_list'] = "jiny-shop::admin.timesale.list";
+        $this->actions['view_form'] = "jiny-shop::admin.timesale.form";
 
     }
 

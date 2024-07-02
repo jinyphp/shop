@@ -18,90 +18,60 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>name</x-form-label>
+                <x-form-label>product_id</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.name")
+                        ->setWire('model.defer',"forms.product_id")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>price</x-form-label>
+                <x-form-label>product</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.price")
+                        ->setWire('model.defer',"forms.product")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>priod</x-form-label>
+                <x-form-label>type</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.priod")
+                        ->setWire('model.defer',"forms.type")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>manager_name</x-form-label>
+                <x-form-label>discount</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.manager_name")
+                        ->setWire('model.defer',"forms.discount")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>manager_phone</x-form-label>
+                <x-form-label>max_count</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.manager_phone")
+                        ->setWire('model.defer',"forms.max_count")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>depature</x-form-label>
+                <x-form-label>expire</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.depature")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>arrive</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.arrive")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>cost</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.cost")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>country</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.country")
+                        ->setWire('model.defer',"forms.expire")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
