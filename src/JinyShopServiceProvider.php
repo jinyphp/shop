@@ -36,6 +36,27 @@ class JinyShopServiceProvider extends ServiceProvider
         /* 라이브와이어 컴포넌트 등록 */
         $this->app->afterResolving(BladeCompiler::class, function () {
 
+                //event_price
+                Livewire::component('ShopEvent', \Jiny\Shop\Http\Livewire\ShopEvent::class);
+
+                //banner
+                Livewire::component('ShopBanner', \Jiny\Shop\Http\Livewire\ShopBanner::class);
+
+                //contacts
+                Livewire::component('ShopContact', \Jiny\Shop\Http\Livewire\ShopContact::class);
+
+                //currency
+                Livewire::component('ShopCurrency', \Jiny\Shop\Http\Livewire\ShopCurrency::class);
+
+                //review
+                Livewire::component('ShopReview', \Jiny\Shop\Http\Livewire\ShopReview::class);
+
+                //seller
+                Livewire::component('ShopSeller', \Jiny\Shop\Http\Livewire\ShopSeller::class);
+
+                //shipping
+                Livewire::component('ShopShipping', \Jiny\Shop\Http\Livewire\ShopShipping::class);
+
 
                 Livewire::component('LiveProducts', \Jiny\Shop\Http\Livewire\LiveProducts::class);
 

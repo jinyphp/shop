@@ -20,16 +20,6 @@ class ShopMainController extends Controller
         $rows = "디비를 검색한 결과";
 
 
-        //
-        //
-        //
-        //
-        //
-
-
-
-
-        //return view('jiny-shop::shop.main.index');
         return view("www::slot1.shop.home",[
             'name' => $name
         ]);
