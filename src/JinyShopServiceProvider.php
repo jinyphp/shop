@@ -57,6 +57,8 @@ class JinyShopServiceProvider extends ServiceProvider
                 //shipping
                 Livewire::component('ShopShipping', \Jiny\Shop\Http\Livewire\ShopShipping::class);
 
+                //category
+                Livewire::component('ShopCategory', \Jiny\Shop\Http\Livewire\ShopCategory::class);
 
                 Livewire::component('LiveProducts', \Jiny\Shop\Http\Livewire\LiveProducts::class);
 

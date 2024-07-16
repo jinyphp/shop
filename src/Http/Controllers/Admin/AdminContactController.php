@@ -18,6 +18,8 @@ class AdminContactController extends WireTablePopupForms
 
         ##
         $this->actions['table'] = "shop_contacts"; // 테이블 정보
+        $this->actions['title'] = "관리자: 연락망 관리";
+        $this->actions['subtitle'] = "연락망 관리 페이지입니다.";
 
         $this->actions['view']['list'] = "jiny-shop::admin.contact.list";
         $this->actions['view']['form'] = "jiny-shop::admin.contact.form";
