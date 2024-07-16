@@ -27,27 +27,26 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('shop_seller', function (Blueprint $table) {
+        Schema::create('shop_manager', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('ref')->default(0);
-            $table->integer('level')->default(0);
-            $table->integer('pos')->default(1);
 
             $table->string('enable')->default(1);
 
-            $table->string('seller');
+            ## 사용자정보
+            $table->string('user')->nullable();
+
+            $table->string('name')->nullable();
             $table->string('email')->nullable();
-            $table->string('password')->nullable();
-            $table->string('site')->nullable();
-            $table->string('title')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('post')->nullable();
-            $table->string('address')->nullable();
 
+            ## 역할
+            $table->string('role')->nullable();
 
+            ## 상위관리자
             $table->string('manager')->nullable();
-            $table->string('comment')->nullable();
+
+            ## 메모
+            $table->text('description')->nullable();
 
 
         });
@@ -60,6 +59,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shop_seller');
+        Schema::dropIfExists('shop_manager');
     }
 };

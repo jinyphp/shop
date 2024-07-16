@@ -9,7 +9,9 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
-
+/**
+ * 쇼핑몰 관리자 데시보드
+ */
 use Jiny\WireTable\Http\Controllers\WireDashController;
 class AdminShopDashboard extends WireDashController
 {
@@ -18,6 +20,7 @@ class AdminShopDashboard extends WireDashController
         parent::__construct();
         $this->setVisit($this);
 
+        // 데시보드 리소스 페이지를 주입합니다.
         $this->actions['view']['main'] = "jiny-shop::admin.dashboard.main";
 
         $this->actions['title'] = "Shop Dashboard";
@@ -26,12 +29,5 @@ class AdminShopDashboard extends WireDashController
         //setMenu('menus/shop.json');
         setTheme("admin/sidebar");
     }
-
-
-
-
-
-
-
 
 }

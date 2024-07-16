@@ -30,7 +30,7 @@
             </x-form-hor>
 
 
-            <x-form-hor>
+            {{-- <x-form-hor>
                 <x-form-label>이미지</x-form-label>
                 <x-form-item>
                     {!! xInputText()
@@ -38,7 +38,17 @@
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
-            </x-form-hor>
+            </x-form-hor> --}}
+
+            <div class="mb-3">
+                <label for="simpleinput" class="form-label">이미지</label>
+                <input type="file" class="form-control"
+                            wire:model.defer="forms.image">
+                @if(isset($forms['image']))
+                <div class="p-2">파일명: /{{$forms['image']}}</div>
+                <img src="/{{$forms['image']}}" width="300px" alt="">
+                @endif
+            </div>
 
             <x-form-hor>
                 <x-form-label>제목</x-form-label>

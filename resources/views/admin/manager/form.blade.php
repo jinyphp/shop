@@ -8,7 +8,6 @@
                 <span class="d-none d-md-block">기본정보</span>
             </x-navtab-link>
 
-
             <x-form-hor>
                 <x-form-label>활성화</x-form-label>
                 <x-form-item>
@@ -18,9 +17,18 @@
                 </x-form-item>
             </x-form-hor>
 
+            <x-form-hor>
+                <x-form-label>이름</x-form-label>
+                <x-form-item>
+                    {!! xInputText()
+                        ->setWire('model.defer',"forms.name")
+                        ->setWidth("standard")
+                    !!}
+                </x-form-item>
+            </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>이메일</x-form-label>
+                <x-form-label>email</x-form-label>
                 <x-form-item>
                     {!! xInputText()
                         ->setWire('model.defer',"forms.email")
@@ -30,65 +38,24 @@
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>국가</x-form-label>
+                <x-form-label>역할</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.country")
+                        ->setWire('model.defer',"forms.role")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
 
             <x-form-hor>
-                <x-form-label>도시</x-form-label>
+                <x-form-label>manager</x-form-label>
                 <x-form-item>
                     {!! xInputText()
-                        ->setWire('model.defer',"forms.city")
+                        ->setWire('model.defer',"forms.manager")
                         ->setWidth("standard")
                     !!}
                 </x-form-item>
             </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>province</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.province")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>Addr1</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.addr1")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>Addr2</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.addr2")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
-            <x-form-hor>
-                <x-form-label>zipcode</x-form-label>
-                <x-form-item>
-                    {!! xInputText()
-                        ->setWire('model.defer',"forms.zipcode")
-                        ->setWidth("standard")
-                    !!}
-                </x-form-item>
-            </x-form-hor>
-
 
 
 

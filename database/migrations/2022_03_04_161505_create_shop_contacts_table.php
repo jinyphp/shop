@@ -30,7 +30,15 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
-            $table->text('comment')->nullable();
+
+            $table->string('title')->nullable();
+            $table->text('content')->nullable();
+
+            ## 처리담당자
+            $table->string('manager')->nullable();
+
+            ##
+            $table->string('status')->default("new");
 
         });
     }

@@ -8,7 +8,8 @@
         <th width='100'>mark</th>
         <th width='100'>rate</th>
         <th width='100'>dec_point</th>
-        <th width='100'>description</th>
+        <th>description</th>
+        <th width='200'>등록일자</th>
     </x-wire-thead>
     <tbody>
         @if(!empty($rows))
@@ -20,14 +21,14 @@
                         {{$item->id}}
                     </x-click>
                 </td>
-
                 <td width='100'>{{$item->title}}</td>
                 <td width='100'>{{$item->currency}}</td>
                 <td width='100'>{{$item->align}}</td>
-                <td width='200'>{{$item->mark}}</td>
-                <td width='200'>{{$item->rate}}</td>
-                <td width='200'>{{$item->dec_point}}</td>
-                <td width='200'>{{$item->description}}</td>
+                <td width='100'>{{$item->mark}}</td>
+                <td width='100'>{{$item->rate}}</td>
+                <td width='100'>{{$item->dec_point}}</td>
+                <td>{{$item->description}}</td>
+                <td width='200'>{{$item->created_at}}</td>
             </x-wire-tbody-item>
             @endforeach
         @endif

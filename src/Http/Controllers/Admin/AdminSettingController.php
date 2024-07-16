@@ -3,10 +3,8 @@ namespace Jiny\Shop\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;
 
@@ -21,6 +19,8 @@ class AdminSettingController extends ConfigController
         ##
         $this->actions['filename'] = "jiny/shop/setting"; // 설정파일명(경로)
         $this->actions['view']['form'] = "jiny-shop::admin.setting.form";
+
+        //$this->actions['view']['layout'] = "jiny-shop::admin.setting.layout";
 
         $this->actions['title'] = "쇼핑설정";
     }

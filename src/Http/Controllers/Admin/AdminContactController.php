@@ -1,13 +1,10 @@
 <?php
-
 namespace Jiny\Shop\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
@@ -25,6 +22,8 @@ class AdminContactController extends WireTablePopupForms
         $this->actions['view']['list'] = "jiny-shop::admin.contact.list";
         $this->actions['view']['form'] = "jiny-shop::admin.contact.form";
 
+        $this->actions['title'] = "contact";
+        $this->actions['subtitle'] = "협력등 다양한 사람들과 소통합니다.";
     }
 
 

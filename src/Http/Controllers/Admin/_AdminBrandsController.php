@@ -1,13 +1,10 @@
 <?php
-
 namespace Jiny\Shop\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
@@ -24,6 +21,8 @@ class AdminBrandsController extends WireTablePopupForms
 
         $this->actions['view_list'] = "jiny-shop::admin.brand.list";
         $this->actions['view_form'] = "jiny-shop::admin.brand.form";
+
+
 
     }
 
