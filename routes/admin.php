@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 if(function_exists('admin_prefix')) {
     $prefix = admin_prefix();
 
-    Route::middleware(['web','auth', 'admin'])
+    Route::middleware(['web'])
     ->name('admin.shop')
     ->prefix($prefix.'/shop')->group(function () {
 
