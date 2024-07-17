@@ -14,7 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('jiny-shop::contact');
+        return view('jiny-shop::shop.resources.views.contact');
     }
 
 

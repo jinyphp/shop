@@ -32,9 +32,9 @@ if(function_exists('admin_prefix')) {
 ##
 Route::middleware(['web'])->group(function(){
     ## 베너목록
-    // Route::get('/admin/shop/banners', [
-    //     \Jiny\Shop\Http\Controllers\Admin\AdminBannersController::class,
-    //     "index"]);
+    Route::get('/admin/shop/banners', [
+        \Jiny\Shop\Http\Controllers\Admin\AdminBannersController::class,
+        "index"]);
 
     Route::get('/admin/shop/sliders', [
         \Jiny\Shop\Http\Controllers\Admin\AdminSlidersController::class,
