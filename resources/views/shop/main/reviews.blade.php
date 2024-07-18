@@ -6,7 +6,7 @@
                 <h5 class="mb-1">제목: {{ $item['title'] }}</h5>
                 <small class="@if(!$loop->first) text-muted @endif">유저: {{ $item['username'] }}</small>
             </div>
-            <h5 class="mb-1">상품: {{ $item['product'] }}</h5>
+            <h5 class="mb-1">상품: {{ $item['goods'] }}</h5>
             <p class="mb-1">별점: {{ $item['rank'] }}</p>
             <p class="mb-1">내용: {{ $item['review'] }}</p>
         </a>

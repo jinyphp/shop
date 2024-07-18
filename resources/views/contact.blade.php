@@ -1,9 +1,4 @@
-<x-theme theme="shop.templates">
-    <x-theme-layout>
-        contact
-
-        @livewire('LiveContact')
-
-
-    </x-theme-layout>
-</x-theme>
+<x-www-layout>
+    contact
+    @livewire('LiveContact')
+</x-www-layout>

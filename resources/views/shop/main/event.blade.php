@@ -4,7 +4,9 @@
         <div class="card h-100">
             <img src="{{ $item['product'] }}" class="card-img-top" alt="{{ $item['product'] }}">
             <div class="card-footer">
-                <h5 class="card-title">{{ $item['discount'] }}</h5>
+                <h5 class="card-title">
+                    <a href="/shop/detail/{{ $item['product_id'] }}" class="fw-bolder">{{ $item['product'] }}</a>
+                </h5>
                 <p class="card-text">{{ $item['type'] }}</p>
                 <small class="text-body-secondary">종료일 {{ $item['expire'] }}</small>
             </div>

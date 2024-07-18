@@ -63,6 +63,11 @@
             <img src="/{{$forms['image']}}" width="300px" alt="">
             @endif
         </div>
+        <script>
+            Livewire.on('fileUploaded', () => {
+                window.location.reload(); // 업로드가 완료되면 페이지를 새로 고칩니다.
+            });
+        </script>
 
         <x-form-hor>
             <x-form-label>이미지 넓이</x-form-label>

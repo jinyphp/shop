@@ -21,9 +21,12 @@ class AdminEventPriceController extends WireTablePopupForms
 
         ##
         $this->actions['table'] = "shop_event_price"; // 테이블 정보
+        $this->actions['title'] = "관리자: 할인 상품 관리";
+        $this->actions['subtitle'] = "할인 상품 관리 페이지입니다.";
 
         $this->actions['view']['list'] = "jiny-shop::admin.event_price.list";
         $this->actions['view']['form'] = "jiny-shop::admin.event_price.form";
+
 
     }
 }
