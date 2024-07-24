@@ -6,12 +6,12 @@ use Livewire\Component;
 use Illuminate\Support\Facades\DB;
 use Webuni\FrontMatter\FrontMatter;
 use Jiny\Pages\Http\Parsedown;
-use \Jiny\Html\CTag;
-use Jiny\Shop\Entities\ShopSliders;
+// use \Jiny\Html\CTag;
+// use Jiny\Shop\Entities\ShopSliders;
 
 //use Livewire\WithFileUploads;
 
-class LiveSliders2 extends Component
+class CartzillaLiveSliders extends Component
 {
     //use WithFileUploads;
     //use \Jiny\WireTable\Http\Trait\Upload;
@@ -37,7 +37,7 @@ class LiveSliders2 extends Component
         // dump() 는 화면에 출력하고, 코드의 실행은 계속
         // dd($rows);
 
-        return view("www::shop-electronics._home-electronics",[
+        return view("jiny-shop::cartzilla.home-electronics-slider",[
             'rows' => $rows
         ]);
     }
