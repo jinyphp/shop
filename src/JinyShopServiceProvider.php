@@ -66,6 +66,13 @@ class JinyShopServiceProvider extends ServiceProvider
                 Livewire::component('LiveProducts', \Jiny\Shop\Http\Livewire\LiveProducts::class);
 
 
+                /**
+                 * 카트질라
+                 */
+                Livewire::component('CartzillaLiveSliders', \Jiny\Shop\Http\Livewire\CartzillaLiveSliders::class);
+
+
+
                 //Livewire::component('LiveCheckout', \Jiny\Shop\Http\Livewire\LiveCheckout::class);
                 Livewire::component('WidgetShopCheckoutProducts', \Jiny\Shop\Http\Livewire\WidgetShopCheckoutProducts::class);
                 Livewire::component('WidgetShopCheckoutShipping', \Jiny\Shop\Http\Livewire\WidgetShopCheckoutShipping::class);

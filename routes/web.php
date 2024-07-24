@@ -13,6 +13,49 @@ Route::middleware(['web'])
     //     return view("www::slot1.shop.home");
     // });
 
+    /**
+     * Cartzilla
+     */
+
+    //메인 화면
+    Route::get('/furniture/home', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\ShopHomeController::class,
+        "index"]);
+    //상품 상세
+    Route::get('/furniture/product', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\ShopProductController::class,
+        "index"]);
+    //카탈로그
+    Route::get('/furniture/catalog', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\ShopCatalogController::class,
+        "index"]);
+    //404
+    Route::get('/furniture/404', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\Shop404Controller::class,
+        "index"]);
+    //contact-v1
+    Route::get('/furniture/contact1', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\ShopContactController::class,
+        "index1"]);
+    //contact-v2
+    Route::get('/furniture/contact2', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\ShopContactController::class,
+        "index2"]);
+    //contact-v3
+    Route::get('/furniture/contact3', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\ShopContactController::class,
+        "index3"]);
+
+    /**
+     * 카트질라 분리
+     */
+    Route::get('/electronics/sliders', [
+        \Jiny\Shop\Http\Controllers\Cartzilla\MainController::class,
+        "index"]);
+
+
+
+
     Route::get('/home', [
         \Jiny\Shop\Http\Controllers\ShopMainController::class,
         "index"]);
