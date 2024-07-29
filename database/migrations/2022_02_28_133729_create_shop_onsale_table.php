@@ -35,7 +35,7 @@ return new class extends Migration
             $table->boolean('status')->nullable();
 
             ## 제목
-            $table->boolean('titlt')->nullable();;
+            $table->boolean('title')->nullable();;
 
             ## 상세내용
             $table->text('content')->nullable();
