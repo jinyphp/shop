@@ -3,12 +3,14 @@
         <div class="dropdown w-100">
             <!-- Button visible on large screens -->
             <div class="cursor-pointer d-none d-lg-block" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-theme="dark">
+                <a class="position-absolute top-0 start-0 w-100 h-100" href="shop-categories">
+                    <span class="visually-hidden">Categories</span>
+                </a>
                 <button type="button" class="btn btn-lg btn-secondary dropdown-toggle w-100 rounded-bottom-0 justify-content-start pe-none">
                     <i class="ci-grid fs-lg"></i>
                     <span class="ms-2 me-auto">Categories</span>
                 </button>
             </div>
-
 
             <!-- Button visible on small screens -->
             <div class="d-lg-none">
@@ -64,6 +66,7 @@
         </div>
     </div>
 </div>
+
 
 
 
