@@ -71,6 +71,8 @@ class JinyShopServiceProvider extends ServiceProvider
                  */
                 Livewire::component('CartzillaLiveSliders', \Jiny\Shop\Http\Livewire\CartzillaLiveSliders::class);
                 Livewire::component('CartzillaLiveOnsale', \Jiny\Shop\Http\Livewire\CartzillaLiveOnsale::class);
+                Livewire::component('CartzillaLiveCategory', \Jiny\Shop\Http\Livewire\CartzillaLiveCategory::class);
+                Livewire::component('CartzillaLiveBanners', \Jiny\Shop\Http\Livewire\CartzillaLiveBanners::class);
 
 
 

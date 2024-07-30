@@ -1,13 +1,14 @@
 <x-www-layout>
-    <div class="row justify-content-center">
-        <div class="col-6">
-            @livewire('CartzillaLiveSliders')
-        </div>
+    <div>
+        @livewire('CartzillaLiveSliders')
     </div>
-
-    <div class="row justify-content-center">
-        <div class="col-6">
-            @livewire('CartzillaLiveOnsale')
-        </div>
+    <div>
+        @livewire('CartzillaLiveOnsale')
+    </div>
+    <div>
+        @livewire('CartzillaLiveBanners');
     </div>
 </x-www-layout>
+
+
+
