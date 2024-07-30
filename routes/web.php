@@ -49,7 +49,7 @@ Route::middleware(['web'])
     /**
      * 카트질라 분리
      */
-    Route::get('/electronics/sliders', [
+    Route::get('/electronics/home', [
         \Jiny\Shop\Http\Controllers\Cartzilla\MainController::class,
         "index"]);
 
