@@ -19,6 +19,7 @@ class CartzillaLiveCategory extends Component
     public function render()
     {
         $objs = DB::table('home_category')->get();
+        //dd($objs);
         $rows = []; // 빈 배열
         foreach($objs as $item) { // 배열에서 각각의 객체를 하나씩 읽어 온다.
 
@@ -35,7 +36,7 @@ class CartzillaLiveCategory extends Component
         }
         // dd는 값을 디버그로 화면에 출력하고, 실행을 중단.
         // dump() 는 화면에 출력하고, 코드의 실행은 계속
-        // dd($rows);
+        //dd($rows);
 
         return view("jiny-shop::cartzilla.home-electronics-category",[
             'rows' => $rows
