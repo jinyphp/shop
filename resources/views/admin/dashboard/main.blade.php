@@ -1,3 +1,7 @@
+<!-- dash info -->
+@includeIf('jiny-site::admin.dashboard.users', [])
+
+
 <div class="row">
     <div class="col-4">
         <div class="card">
@@ -437,13 +441,12 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
 </div>
+
+
+<!-- Dashboard Content-->
+@includeIf('jiny-site::admin.dashboard.cms', [])
+
+<hr>
+
+@includeIf('jiny-site::admin.dashboard.site', [])
