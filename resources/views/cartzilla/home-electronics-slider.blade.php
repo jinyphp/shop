@@ -56,7 +56,7 @@
                                             <div class="swiper-slide d-flex justify-content-end">
                                                 <div class="ratio rtl-flip"
                                                     style="max-width: 495px; --cz-aspect-ratio: calc(537 / 495 * 100%)">
-                                                    <img src="{{ $item['price'] }}" alt="Image">
+                                                    <img src="{{ $item['image'] }}" alt="Image">
                                                 </div>
                                             </div>
                                         @endforeach

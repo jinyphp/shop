@@ -31,13 +31,11 @@
     <div>
         @livewire('CartzillaLiveOnsale')
     </div>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-        <div style="flex: 1 1 48%; max-width: 48%; box-sizing: border-box;">
-            @livewire('CartzillaLiveBanners')
-        </div>
-        <div style="flex: 1 1 48%; max-width: 48%; box-sizing: border-box;">
-            @livewire('CartzillaLivenewArrivals')
-        </div>
+    <div>
+        @livewire('CartzillaLiveBanners')
+    </div>
+    <div>
+        @livewire('CartzillaLivenewArrivals')
     </div>
 </x-www-layout>
 
