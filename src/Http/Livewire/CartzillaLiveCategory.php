@@ -16,9 +16,22 @@ class CartzillaLiveCategory extends Component
     //use WithFileUploads;
     //use \Jiny\WireTable\Http\Trait\Upload;
 
+    // public function render()
+    // {
+    //     // 카테고리 데이터를 데이터베이스에서 가져옵니다.
+    //     $categories = DB::table('home_category')->get();
+    //     $categories = $categories->groupBy('ref'); // 'ref'로 그룹화하여 하위 카테고리 구조를 만듭니다.
+
+    //     return view('jiny-shop::cartzilla.home-electronics-category', [
+    //         'categories' => $categories
+    //     ]);
+    // }
+
+
+
     public function render()
     {
-        $objs = DB::table('home_category')->get();
+        $objs = DB::table('shop_categories')->get();
         //dd($objs);
         $rows = []; // 빈 배열
         foreach($objs as $item) { // 배열에서 각각의 객체를 하나씩 읽어 온다.

@@ -29,29 +29,29 @@
                                 <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
                                     <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex">
                                         <i class="ci-category-icon fs-xl opacity-60 pe-1 me-2"></i>
-                                        <span class="text-truncate">{{ $category['sel_categories'] }}</span>
+                                        <span class="text-truncate">{{ $category['name'] }}</span>
                                         <i class="ci-chevron-right fs-base ms-auto me-n1"></i>
                                     </a>
                                     <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
                                         <i class="ci-category-icon fs-xl opacity-60 pe-1 me-2"></i>
-                                        {{ $category['sel_categories'] }}
+                                        {{ $category['name'] }}
                                         <i class="ci-chevron-down fs-base ms-auto me-n1"></i>
                                     </div>
                                 </div>
-                                <div class="dropdown-menu rounded-4 p-4" style="top: 1rem; height: calc(100% - .1875rem); animation: none;">
+                                <div class="dropdown-menu rounded-4 p-4" style="top: 1rem; animation: none;">
                                     <div class="d-flex flex-column flex-lg-row h-100 gap-4">
                                         <div style="min-width: 194px">
                                             <div class="d-flex w-100">
                                                 <a class="animate-underline animate-target d-inline h6 text-dark-emphasis text-decoration-none text-truncate">
-                                                    {{ $category['sel_categories'] }}
+                                                    {{ $category['name'] }}
                                                 </a>
                                             </div>
                                             <ul class="nav flex-column gap-2 mt-n2">
                                                 @foreach ($rows as $subCategory)
-                                                    @if ($subCategory['level'] == 2 && $subCategory['ref'] == $category['id'])
+                                                    @if ($subCategory['level'] == 2 && $subCategory['ref'] == $category['slug'])
                                                         <li class="d-flex w-100 pt-1">
-                                                            <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shop/products/1">
-                                                                {{ $subCategory['sel_categories'] }}
+                                                            <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shop/products/{{ $subCategory['slug'] }}">
+                                                                {{ $subCategory['name'] }}
                                                             </a>
                                                         </li>
                                                     @endif
