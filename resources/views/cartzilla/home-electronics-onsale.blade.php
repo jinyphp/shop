@@ -39,7 +39,7 @@
                         </div>
                         <div class="col-md-6 d-flex justify-content-center justify-content-md-end pb-5 pb-md-0">
                             <div class="me-xxl-4">
-                                <img src="{{ $item['content'] }}" class="d-block rtl-flip" width="420">
+                                <img src="{{ $item['image'] }}" class="d-block rtl-flip" width="420">
                                 <div class="d-none d-lg-block" style="margin-bottom: -9%"></div>
                             </div>
                         </div>
